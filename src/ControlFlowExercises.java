@@ -87,7 +87,7 @@ public class ControlFlowExercises {
 
             answer = sc.next();
         }
-        System.out.println("Thanks for using the grades app!");
+        System.out.println("Thank you for using the grades app!");
 
     }
 
