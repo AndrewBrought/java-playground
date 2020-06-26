@@ -41,16 +41,53 @@ public class ControlFlowExercises {
 //    }
 
         Scanner sc = new Scanner(System.in);
+//
+//        Table of Powers
+//        System.out.println("Welcome");
+//        System.out.println("What number would you like to go up to?");
+//        int userInput = sc.nextInt();
+//        System.out.println("Here is your table!");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | ------");
+//        for(int i = 1; i <= userInput; i++){
+//            System.out.println(i + "      | " + i * i + "       | " + i * i * i);
+//        }
 
-        System.out.println("Welcome");
-        System.out.println("What number would you like to go up to?");
-        int userInput = sc.nextInt();
-        System.out.println("Here is your table!");
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | ------");
-        for(int i = 1; i <= userInput; i++){
-            System.out.println(i + "      | " + i * i + "       | " + i * i * i);
+//        Grades application
+
+        System.out.println("Would you like to look at your letter grades?");
+        String answer = sc.nextLine();
+
+//        loop
+        while(answer.equalsIgnoreCase("y")) {
+            System.out.println("Please enter a numeric grade from 0 - 100: ");
+            int grade = sc.nextInt();
+            String letterGrade;
+            if(grade > 98){
+                letterGrade = "an A+";
+            } else if(grade > 89){
+                letterGrade = "an A";
+            } else if(grade > 85){
+                letterGrade = "a B+";
+            } else if(grade > 79){
+                letterGrade = "a B";
+            } else if(grade > 75){
+                letterGrade = "a C+";
+            } else if(grade > 69){
+                letterGrade = "a C";
+            } else if(grade > 66){
+                letterGrade = "a D";
+            } else {
+                letterGrade = "an F";
+            }
+
+            System.out.printf("Your letter grade is %s%n", letterGrade);
+
+            System.out.println("Do you want to check more grades?");
+
+            answer = sc.next();
         }
+        System.out.println("Thanks for using the grades app!");
 
     }
 
