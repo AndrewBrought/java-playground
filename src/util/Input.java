@@ -7,7 +7,7 @@ public class Input {
     private Scanner input;
 
     public Input(){
-        this.input = new Scanner(System.in);
+        this.input = new Scanner(System.in).useDelimiter("\n");
     }
 
 //    String input
@@ -24,13 +24,13 @@ public class Input {
             return false;
         } else{
             System.out.println("I am sorry... please enter [Y / N]");
-            return yesNo();
         }
+            return yesNo();
     }
 
 //  Number input between min and max
     public int getInt(int min, int max){
-        int userInt = input.nextInt();
+        int userInt = getInt();
         if(userInt >= min || userInt <= max){
             return userInt;
         } else {
