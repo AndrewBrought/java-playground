@@ -15,6 +15,12 @@ public class Input {
         return input.nextLine();
     }
 
+    //    String input
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return input.nextLine();
+    }
+
 //    True/False input
     public boolean yesNo(){
         String userInput = input.nextLine();
