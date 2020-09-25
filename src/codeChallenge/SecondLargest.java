@@ -1,3 +1,5 @@
+package codeChallenge;
+
 import java.util.ArrayList;
 
 //define a method that will return the second largest integer from a list
